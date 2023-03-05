@@ -107,7 +107,6 @@ size_t tfs_fread(void* ptr, size_t size, size_t nmemb, FILE* _stream){
 			TFS_SETERRNO(ENOSR);
 			return 0;
 		}
-		puts("TFS::READ");
 		TFS_FILE* stream = (TFS_FILE*) _stream;
 		size_t off = 0;
 		// TODO optimize
